@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    
 
 </head>
 <body>
@@ -16,18 +19,19 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p class="nome-do-email">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer suas configurações no seu ambiente.</p>
-                <form action="login.php" method="post" autocomplete="off">
-                    <p class="caixas">
-                        <label for="iemail">Email:</label>
-                        <input type="email" name="email" id="iemail" required placeholder="Seu Email"  class="dentro">
-                    </p>
-                    <p class="caixas">
-                         <label for="isenha">Senha:</label>
-                         <input type="password" name="senha" id="isenha" required placeholder="Sua Senha" class="dentro">
-                    </p>
-                    <p class="botao">
-                        <input type="submit" value="ENTRAR">
-                    </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required maxlength="30" placeholder="seu email">
+                        <label for="iemail">email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="5" maxlength="10" placeholder="sua senha">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao" >Esqueci a Senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
 

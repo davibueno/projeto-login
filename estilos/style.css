@@ -23,19 +23,19 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%);
     background-color: white;
-    height:500px;
+    height:515px;
     width: 250px;
     border-radius: 20px;
     overflow: hidden;
     display: block;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    transform:translate(-50%, -50%);
 }
 #imagem{
     display: block;
-    background: red url(../imagens/foto-login.jpg) no-repeat;
+    background: url(../imagens/foto-login.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 200px;
@@ -44,18 +44,73 @@ main{
     display: block;
     padding: 10px
 }
-h1{
+#formulario > h1{
   text-align: center;
+  margin-bottom: 10px;
 }
-.caixas{
-    background-color:#5f2c82;
+#formulario > p{
+    font-size:0.8em
 }
-.dentro{
-    background-color: aqua;
+.campo{
+    display:block;
+    background-color: #5f2c82;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid #5f2c82 ;
+}
+.campo > span{
+    padding: 5px;
+    color: white;
+    font-size: 2em;
+    width: 40px;
+}
+.campo > input:focus-within{
+    background-color: white;
+}
+.campo > input{
+    background-color: #8cddda;
+   font-size: 1em;
+   width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding:4px;
+    transform: translateY(-12px);
+}
+
+form > input[type=submit]{
+    background-color:#49a09d ;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 .botao{
- text-align: center;
-
+    display: block;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #49a09d;
+    font-size: 1em;
+    padding:5px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #295755;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #49a09d;
+}
+.botao > span{
+    font-size: 0.8em;
+}
+label{
+    display: none;
 }
 
 
