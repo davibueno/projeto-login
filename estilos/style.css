@@ -10,7 +10,7 @@ lílas: #5f2c82
     box-sizing: border-box;
 }
 body, html{
-    background-color: violet;
+    background-color:#5f2c82;
     height: 100vh;
     width: 100vw;
 }
@@ -25,18 +25,36 @@ main{
     left: 50%;
     transform:translate(-50%, -50%);
     background-color: white;
-    height:600px;
+    height:550px;
     width: 250px;
     border-radius: 20px;
     overflow: hidden;
     display: block;
     margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);
 }
 #imagem{
     background: red url(../imagens/foto-login.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 300px;
+    height: 200px;
+}
+.caixas{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:#5f2c82;
+    border-radius: 70px;
+    
+}
+.dentro{
+    padding: 7px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+.botao{
+ text-align: center;
+ 
 }
 
 
